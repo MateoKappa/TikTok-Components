@@ -1,0 +1,231 @@
+div.page {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-size: cover;
+  background-image: linear-gradient(
+    to left top,
+    #0078c7,
+    #2493dda9,
+    #ee3b67a6,
+    #e20a2ebb,
+    #dd2e2ee1,
+    #b34949bb,
+    #2b818bb0,
+    #00c7a8,
+    #00c7a8
+  );
+  div.cardContainer {
+    position: relative;
+    background-color: white;
+    height: 650px;
+    width: 650px;
+    border-radius: 10px;
+    padding: 250px 0 30px 0;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+
+    div.card {
+      position: absolute;
+      background-color: rgb(22, 178, 199);
+      width: 70%;
+      height: 250px;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: -125px auto;
+      border-radius: 15px;
+      background-image: url("https://designshack.net/wp-content/uploads/best-watercolor-backgrounds-368x246.jpg");
+      background-size: cover;
+      img[id="front"] {
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        width: 100px;
+      }
+      img[id="chip"] {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        width: 80px;
+        height: 50px;
+      }
+      div.digits {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        display: flex;
+        font-size: 32.5px;
+        color: rgba(255, 255, 255, 0.822);
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+        margin-left: 40px;
+        align-items: center;
+        z-index: 1;
+        div.spaces[id="3"],
+        [id="7"],
+        [id="11"] {
+          margin-right: 20px;
+        }
+      }
+      div.name {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        margin: 0 35px;
+        font-size: 15.5px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        div.fullName {
+          display: flex;
+          div.spaces[id="space"] {
+            margin-right: 5px;
+          }
+        }
+      }
+      div.expires {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        margin: 0 35px;
+        font-size: 15.5px;
+        display: grid;
+        place-items: center;
+        color: white;
+        text-align: center;
+        width: 55px;
+        div.expiresDate {
+          display: flex;
+        }
+      }
+      div.black,
+      div.white {
+        position: absolute;
+        top: 27.5px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.863);
+      }
+      div.cvv {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        display: flex;
+        font-size: 25px;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+        margin-left: calc(100% - 72px);
+        align-items: center;
+        div.spaces {
+          z-index: 1;
+        }
+      }
+      div.white {
+        top: calc(50% - 20px);
+        background-color: white;
+        margin: 0 20px;
+        border-radius: 4px;
+      }
+      h5[id="back"] {
+        position: absolute;
+        top: calc(50% - 38px);
+        color: white;
+        right: 25px;
+        font-weight: 500;
+        background-color: transparent;
+      }
+      img[id="back"] {
+        position: absolute;
+        bottom: 0;
+        margin: 20px;
+        width: 100px;
+        right: 0;
+      }
+      input {
+        position: absolute;
+        top: calc(50% - 20px);
+        right: -5px;
+        border: none;
+        font-size: 28px;
+        background-color: transparent;
+        height: 40px;
+        width: 70px;
+        transform: rotateX(370deg);
+      }
+    }
+
+    div.card_Num_Holder {
+      display: flex;
+      flex-direction: column;
+      width: 91%;
+      margin: auto;
+      h5 {
+        color: #2425258c;
+        font-size: 15px;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+      input {
+        padding: 15px 10px 15px 10px;
+        border: 1px solid #ecedee5b;
+        box-shadow: 0px 0px 2px rgba(66, 66, 66, 0.75);
+        &:focus {
+          outline: none;
+          border: 1px solid #61c4ebd5;
+        }
+      }
+    }
+
+    div.date_cvv {
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      place-items: center;
+      justify-content: center;
+      margin: 20px;
+      gap: 20px;
+      h5 {
+        color: #2425258c;
+        font-size: 15px;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+      div.details {
+        width: 100%;
+        select,
+        input {
+          width: 100%;
+          padding: 15px 10px 15px 10px;
+          border: 1px solid #ecedee5b;
+          box-shadow: 0px 0px 2px rgba(66, 66, 66, 0.75);
+          color: #2425258c;
+          font-size: 15px;
+          margin-bottom: 5px;
+          font-weight: 500;
+          &:focus {
+            outline: none;
+            border: 1px solid #61c4ebd5;
+          }
+        }
+      }
+    }
+
+    button {
+      width: 91%;
+      height: 50px;
+      border-radius: 5px;
+      border: none;
+      background-color: rgb(55, 55, 252);
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      margin: auto;
+    }
+  }
+}
