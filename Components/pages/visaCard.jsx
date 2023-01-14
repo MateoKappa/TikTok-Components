@@ -1,4 +1,4 @@
-import styles from "../styles/index.module.scss";
+import styles from "../styles/visaCard.module.scss";
 import {useState, useEffect, useRef} from "react";
 import {motion, AnimatePresence} from "framer-motion";
 export default function Home() {

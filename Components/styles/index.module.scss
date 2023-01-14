@@ -1,0 +1,38 @@
+div.page {
+  width: 100vw;
+  height: 100vh;
+  h1 {
+    text-align: center;
+    margin: 150px;
+    color: white;
+  }
+  div.components {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    div.component {
+      margin: 20px;
+      width: 300px;
+      height: 250px;
+      background-color: #212f44;
+      box-shadow: 0 0 5px black;
+      display: flex;
+      color: #506d989e;
+      justify-content: center;
+      align-items: center;
+      transition: 200ms;
+      &:hover {
+        transition: 200ms;
+        color: #466ca7ed;
+        background-color: #233045;
+      }
+      h3 {
+        font-size: 25px;
+      }
+      i {
+        margin: 5px;
+        font-size: 40px;
+      }
+    }
+  }
+}
