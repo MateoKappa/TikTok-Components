@@ -17,17 +17,17 @@ div.page {
       background-color: #212f44;
       box-shadow: 0 0 5px black;
       display: flex;
-      color: #506d989e;
+      color: #73cd969e;
       justify-content: center;
       align-items: center;
       transition: 200ms;
       &:hover {
         transition: 200ms;
-        color: #466ca7ed;
+        color: #73cd96dd;
         background-color: #233045;
       }
       h3 {
-        font-size: 25px;
+        font-size: 20px;
       }
       i {
         margin: 5px;

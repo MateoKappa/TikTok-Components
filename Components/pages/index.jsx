@@ -9,16 +9,13 @@ function index() {
         <Link href="/visaCard">
           {" "}
           <div className={styles.component}>
-            {" "}
-            <h3>Card Hover</h3> <i className="fa-regular fa-laptop-code" />
+            <h3>Card Visa Animation</h3> <i class="fa-brands fa-cc-visa" />
           </div>
         </Link>
         <Link href="/cardHover">
-          {" "}
           <div className={styles.component}>
-            {" "}
-            <h3>Card Hover</h3>
-            <i class="fa-brands fa-cc-visa"></i>
+            <h3>Card Hover Effect</h3>{" "}
+            <i className="fa-regular fa-laptop-code" />{" "}
           </div>
         </Link>
       </div>
