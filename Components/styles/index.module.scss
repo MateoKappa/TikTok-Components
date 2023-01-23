@@ -1,9 +1,36 @@
 div.page {
-  width: 100vw;
-  height: 100vh;
+  div.introduction{
+    height: 100vh;
+    background-image: linear-gradient(
+      to left top,
+      #0078c7,
+      #2493dda9,
+      #ee3b67a6,
+      #e20a2ebb,
+      #dd2e2ee1,
+      #b34949bb,
+      #2b818bb0,
+      #00c7a8,
+      #00c7a8
+    );
+    div.introduction_Text{
+    display: grid;
+    grid-template-columns: 50% 50%;
+      
+      p{
+        margin: 50px;
+        background-color: rgba(0, 0, 0, 0.24);
+        color: white;
+        padding: 20px 30px 30px 30px;
+        font-size: 25px;
+        line-height: 30px;
+      }
+      
+    }
+  }
   h1 {
     text-align: center;
-    margin: 150px;
+    padding: 100px;
     color: white;
   }
   div.components {
