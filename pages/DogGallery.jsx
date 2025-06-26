@@ -4,6 +4,8 @@ import styles from "../styles/dogGallery.module.scss";
 import {useState} from "react";
 function DogTider() {
   const [imageClick, setImageClick] = useState(false);
+
+  //test
   return (
     <div className={styles.page}>
       <AnimatePresence exitBeforeEnter mode="true">
